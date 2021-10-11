@@ -1,5 +1,5 @@
 <!-- This is the form for adding a new entry -->
-<div class="add-entry-container"></div>
+<div class="add-entry-container">
   <form class="new-entry-form">
     <label for="entry_title">
       Title:
@@ -21,7 +21,7 @@
 
 <div class="entries-container">
   {{#each entries as |entry|}}
-  <div class="entry col-md-5">
+  <div class="entry-card">
     <h3>
       {{entry.entry_title}}
     </h3>

@@ -1,7 +1,7 @@
 async function newFormHandler(event) {
   event.preventDefault();
-  const entry_title = document.querySelector('#dish_name').value;
-  const entry_text = document.querySelector('#description').value;
+  const entry_title = document.querySelector('#entry_title').value;
+  const entry_text = document.querySelector('#entry_text').value;
   
  // Send fetch request to add a new entry
   const response = await fetch(`/api/entry`, {
@@ -14,7 +14,7 @@ async function newFormHandler(event) {
       'Content-Type': 'application/json',
     },
   });
-  //if the dish is added, the 'all' template will be rerendered
+  //if the entry is added, the 'all' template will be rerendered
   if (response.ok) {
     document.location.replace('/');
   } else {
