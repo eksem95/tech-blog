@@ -1,20 +1,10 @@
-<div class="dish-card">
-  <div class="dish-card-header">
-    {{dish_name}}
+<div class="entry-card">
+  <div class="entry-card-header">
+    {{ entry_title }}
   </div>
   <div class="card-body">
     <p>
-      Description:
-      {{description}}
+      {{entry_text}}
     </p>
-    <p>
-      Guest:
-      {{guest_name}}
-    </p>
-    {{#if has_nuts}}
-      <p class="has-nuts">
-        Contains Nuts
-      </p>
-    {{/if}}
   </div>
 </div>
