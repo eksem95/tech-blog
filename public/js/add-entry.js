@@ -18,9 +18,9 @@ async function newFormHandler(event) {
   if (response.ok) {
     document.location.replace('/');
   } else {
-    alert('Failed to add dish');
+    alert('Failed to add entry');
   }
 }
 
-document.querySelector('.new-dish-form').addEventListener('submit', newFormHandler);
+document.querySelector('.new-entry-form').addEventListener('submit', newFormHandler);
   

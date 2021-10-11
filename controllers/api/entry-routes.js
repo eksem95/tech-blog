@@ -8,7 +8,7 @@ router.post('/', async (req, res) => {
     entry_title: req.body.entry_title,
     entry_text: req.body.entry_text
   });
-  // if the dish is successfully created, the new response will be returned as json
+  // if the post is successfully created, the new response will be returned as json
   res.status(200).json(entryData)
 } catch (err) {
   res.status(400).json(err);
