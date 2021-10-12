@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const Entry = require('../../models/Entry');
+const Entry = require('../../models/entry');
 
 // route to create/add a entry using async/await
 router.post('/', async (req, res) => {
