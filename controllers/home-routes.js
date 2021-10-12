@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const Entry = require('../models/Entry');
+const Entry = require('../models/entry');
 
 // route to get all entries
 router.get('/', async (req, res) => {
